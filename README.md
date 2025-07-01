@@ -10,3 +10,8 @@ main()
 int main() {
     printf("Fatımagül\tKarakaş");
 }
+#include <iostream>
+
+int main() {
+    printf("Fırat\nÜniver\nsitesi");
+}
