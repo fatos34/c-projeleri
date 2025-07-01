@@ -5,3 +5,8 @@ main()
 {
       printf("Merhaba Dünya");
 }
+#include <iostream>
+
+int main() {
+    printf("Fatımagül\tKarakaş");
+}
