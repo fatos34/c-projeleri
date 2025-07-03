@@ -48,3 +48,8 @@ int main() {
     alan=PI*r*r;
     printf("alan=%f",alan);
 }
+//vize ve final geçme notu
+  double vize,final,ort;
+  vize=50;
+  final=60;
+  ort=vize*0.4+final*0.6;
