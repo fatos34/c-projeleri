@@ -38,3 +38,13 @@ int main() {
     int e=6;
     int toplam=a+b+c+d+e;
     printf("toplam=%d",toplam);
+#include <iostream>
+
+int main() {
+    //daire alanı bulma
+    const float PI=3.14;
+    float r,alan;
+    r=7;
+    alan=PI*r*r;
+    printf("alan=%f",alan);
+}
