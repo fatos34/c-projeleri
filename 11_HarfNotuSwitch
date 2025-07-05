@@ -1,0 +1,17 @@
+#include <iostream>
+
+int main() {
+char krk;
+puts("[A-B-C-D-E] harf notu gir:");
+scanf("%c",&krk);
+switch(krk)
+{
+    case 'A':printf("pekiyi");break;
+    case 'B':printf("iyi");break;
+    case 'C':printf("orta");break;
+    case 'D':printf("gecer");break;
+    case 'E':printf("kötü");break;
+    default:printf("hatali");break;
+}
+   
+}
