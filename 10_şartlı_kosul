@@ -1,0 +1,17 @@
+#include <iostream>
+
+int main() {
+   int a,b;
+   printf("a gir:");
+   scanf("%d",&a);
+   printf("b gir:");
+   scanf("%d",&a);
+   system("cls");
+   if(a>=b)
+   {printf("buyuk sayı:%d",a);}
+   else if(b>a)
+   {printf("buyuk sayı:%d",b);}
+   else
+   {printf("hatalı giris");}
+   
+}
