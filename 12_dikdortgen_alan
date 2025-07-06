@@ -4,7 +4,7 @@ using namespace std;
 int main() {
   
   int uzunluk = 4;
-  int genişlik = 6;
+  int genislik = 6;
 
   
   int alan = uzunluk * genislik;
