@@ -1,0 +1,49 @@
+#include <iostream>
+
+// Şablon sınıf tanımı
+template<typename T>
+class Mat {
+public:
+    T a, b;  // DÜZELTME: a() ve b() yerine değişken olarak tanımlandı
+
+    T tola() {
+        return a + b;
+    }
+};
+
+// Örnek sınıf
+class Silah {};
+
+// ostream << operatörü tanımlanmazsa, cout << nesne hatası olur
+std::ostream& operator<<(std::ostream& os, const Silah&) {
+    os << "Silah nesnesi";
+    return os;
+}
+
+// Şablon fonksiyon: referansı döndürür
+template<typename T>
+T& nesneYap(T& nesne) {
+    return nesne;
+}
+
+int main() {
+    // Silah sınıfından nesne oluşturuluyor
+    Silah silah;
+
+    // nesneYap fonksiyonu çağrılıyor ve ekrana yazdırılıyor
+    std::cout << nesneYap(silah) << std::endl;
+
+    // Mat<int> örneği
+    Mat<int> mat;
+    mat.a = 10;
+    mat.b = 20;
+    std::cout << "Toplam (int): " << mat.tola() << std::endl;
+
+    // Mat<float> örneği
+    Mat<float> mat1;
+    mat1.a = 10.5f;
+    mat1.b = 20.9f;
+    std::cout << "Toplam (float): " << mat1.tola() << std::endl;
+
+    return 0;
+}
